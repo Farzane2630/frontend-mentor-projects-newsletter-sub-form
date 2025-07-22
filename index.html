@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/fonts/Roboto-Bold.ttf" />
+    <link rel="stylesheet" href="./assets/fonts/Roboto-Regular.ttf" />
+    <link rel="stylesheet" href="style.css" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <main class="wrapper">
+        <section class="illustration-section">
+        <picture>
+          <source
+            media="(min-width: 992px)"
+            srcset="./assets/images/illustration-sign-up-desktop.svg"
+            class="illustration-desktop"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/images/illustration-sign-up-tablet.svg"
+            class="illustration-tablet"
+          />
+          <img
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt="illustration-sign-up"
+            class="illustration-mobile"
+          />
+        </picture>
+      </section>
+      <section class="content-section">
+        <h1 class="header">Stay updated!</h1>
+        <p class="sub-head">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <div class="list-wrapper">
+          <div class="list-item">
+            <img
+              src="./assets/images/icon-list.svg"
+              alt="list-icon"
+              class="list-icon"
+            />
+            <p class="list-content">
+              Product discovery and building what matters
+            </p>
+          </div>
+          <div class="list-item">
+            <img
+              src="./assets/images/icon-list.svg"
+              alt="list-icon"
+              class="list-icon"
+            />
+            <p class="list-content">
+              Measuring to ensure updates are a success
+            </p>
+          </div>
+          <div class="list-item">
+            <img
+              src="./assets/images/icon-list.svg"
+              alt="list-icon"
+              class="list-icon"
+            />
+            <p class="list-content">And much more!</p>
+          </div>
+        </div>
+
+        <form action="./success.html" class="sign-up">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@company.com"
+          />
+          <button class="submit-btn" type="submit">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 1rem;
+  min-height: 100vh;
+  font-family: "Robot", sans-serif;
+  background-color: #36384e;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.wrapper {
+  width: 375px;
+  background-color: white;
+  color: #36384e;
+  display: grid;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2em; }
+
+.content-section {
+  padding: 0 1.5em 2em 1.5em;
+  display: grid;
+  gap: 1em; }
+  .content-section .header {
+    color: #242742; }
+  .content-section .list-wrapper {
+    display: grid;
+    gap: 1rem; }
+    .content-section .list-wrapper .list-item {
+      display: flex;
+      column-gap: 0.5em;
+      align-items: flex-start; }
+  .content-section form {
+    display: grid;
+    gap: 1em; }
+    .content-section form label {
+      font-weight: 700;
+      font-size: 0.75em; }
+    .content-section form input {
+      padding: 1em 1.5em;
+      border: 0.1em solid #949494;
+      border-radius: 0.5em; }
+
+.submit-btn,
+.dismiss-btn {
+  width: 100%;
+  padding: 1.5em;
+  border: none;
+  color: white;
+  background-color: #242742;
+  font-weight: 700;
+  border-radius: 0.5em;
+  cursor: pointer; }
+  .submit-btn:hover,
+  .dismiss-btn:hover {
+    background: linear-gradient(90deg, #ff6257 50%, rgba(255, 166, 0, 0.521) 100%); }
+
+.success-wrapper {
+  height: 100vh;
+  background-color: white;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 2em; }
+  .success-wrapper .content {
+    display: grid;
+    gap: 2em; }
+
+@media (min-width: 768px) {
+  body {
+    padding-inline: 4em; }
+
+  .wrapper {
+    width: fit-content;
+    grid-template-columns: 1.5fr 1fr;
+    border-radius: 1em;
+    padding: 2em 2em; }
+
+  .illustration-section {
+    order: 2; }
+    .illustration-section .illustration-mobile {
+      max-width: 100%; }
+
+  .success-wrapper {
+    height: fit-content;
+    max-width: 22em;
+    border-radius: 2em; } }
+
+/*# sourceMappingURL=style.css.map */

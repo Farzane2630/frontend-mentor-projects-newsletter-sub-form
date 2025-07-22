@@ -1,0 +1,153 @@
+// Color Vars
+$Primary--Red: hsl(4, 100%, 67%);
+$Dark--Blue: hsl(234, 29%, 20%);
+$Primary--Blue: hsl(235, 18%, 26%);
+$Grey: hsl(0, 0%, 58%);
+$White: hsl(0, 0%, 100%);
+
+// Breakpoint Vars
+$sm: 375px;
+$md: 768px;
+$lg: 992px;
+
+
+// Resetting  Browser Default Style
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1rem;
+    min-height: 100vh;
+    font-family: "Robot", sans-serif;
+    background-color: $Primary--Blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Signup Page
+.wrapper {
+    width: 375px;
+    background-color: $White;
+    color: $Primary--Blue;
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+}
+
+.content-section {
+    padding: 0 1.5em 2em 1.5em;
+    display: grid;
+    gap: 1em;
+
+    .header {
+        color: $Dark--Blue;
+    }
+
+    .list-wrapper {
+        display: grid;
+        gap: 1rem;
+
+        .list-item {
+            display: flex;
+            column-gap: 0.5em;
+            align-items: flex-start;
+        }
+    }
+
+    form {
+        display: grid;
+        gap: 1em;
+
+        label {
+            font-weight: 700;
+            font-size: 0.75em;
+        }
+
+        input {
+            padding: 1em 1.5em;
+            border: 0.1em solid $Grey;
+            border-radius: 0.5em;
+        }
+
+
+
+    }
+
+}
+
+// Shared Styles in both HTML files
+.submit-btn,
+.dismiss-btn {
+    width: 100%;
+    padding: 1.5em;
+    border: none;
+    color: $White;
+    background-color: $Dark--Blue;
+    font-weight: 700;
+    border-radius: 0.5em;
+    cursor: pointer;
+
+    &:hover {
+        background: linear-gradient(90deg, $Primary--Red 50%, rgba(255, 166, 0, 0.521) 100%);
+    }
+}
+
+
+// Success Message 
+.success-wrapper {
+    height: 100vh;
+    background-color: $White;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 2em;
+
+    .content {
+        display: grid;
+        gap: 2em
+    }
+}
+
+
+
+// Media Queries
+
+// Tablet and bigger divices
+@media (min-width:$md) {
+    body {
+        padding-inline: 4em;
+    }
+
+    .wrapper {
+        width: fit-content;
+        grid-template-columns: 1.5fr 1fr;
+        border-radius: 1em;
+        padding: 2em 2em;
+    }
+
+    .illustration-section {
+        order: 2;
+
+        .illustration-mobile {
+            max-width: 100%;
+        }
+
+    }
+
+
+
+    // Success Message 
+    .success-wrapper {
+        height: fit-content;
+        max-width: 22em;
+        border-radius: 2em;
+    }
+}
