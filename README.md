@@ -55,6 +55,29 @@ Users should be able to:
 
 ### What I learned
 
+📌 What does aria-live do?
+When you add aria-live to an element, you’re telling screen readers:
+
+“Hey! If the content inside this element changes, read it out loud automatically.”
+
+This is useful for updates that happen without a page reload — like error messages, form validation messages, chat messages, or notifications.
+
+🔢 Types of aria-live values
+There are three main values you’ll see:
+
+aria-live="off" (default)
+➜ Screen readers ignore changes in this area unless the user focuses on it.
+
+aria-live="polite"
+➜ Screen readers will announce changes after finishing what they’re currently reading.
+👉 Good for non-urgent updates (like “Form saved successfully!” or “New comment added”).
+
+aria-live="assertive"
+➜ Screen readers immediately interrupt whatever they’re reading to announce the change.
+👉 Use only for urgent updates (like “Error! Payment failed.”).
+
+I have used this aria-label in my code for error message of inpu.
+
 ### Continued development
 
 ### Useful resources
