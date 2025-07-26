@@ -2,7 +2,10 @@ const form = document.querySelector("form");
 const emailInput = document.querySelector("#email");
 const submitBtn = document.querySelector(".submit-btn");
 const errorMsg = document.querySelector(".email-error-message");
+const siteUrl = "http://localhost:8082" || "https://frontend-mentor-projects-newsletter.vercel.app/"
 
+
+console.log(siteUrl);
 
 // this function shows that email input has a valid type or not
 const isEmailValid = () => {
@@ -45,7 +48,7 @@ form.addEventListener("submit", (e) => {
     setTimeout(() => {
       submitBtn.innerHTML = "Subscribe to monthly newsletter";
       alert("Sign up successfully!");
-      form.action = "http://localhost:8082/success.html";
+      form.action = `${siteUrl}/success.html`;
       form.submit();
       form.reset();
     }, 2000);
