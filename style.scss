@@ -126,9 +126,17 @@ body {
         gap: 2em
     }
 
-    .dismiss-btn a {
-        text-decoration: none;
-        color: $White
+    .dismiss-btn {
+        display: grid;
+        padding: 0;
+
+        a {
+            padding: 1.5em;
+            text-decoration: none;
+            color: $White;
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 
