@@ -34,7 +34,7 @@ Users should be able to:
 
 <img width="952" height="654" alt="Image" src="https://github.com/user-attachments/assets/7ba8431c-2aa5-4e45-9c9a-32301dc028f4" />
 <img width="1314" height="654" alt="Image" src="https://github.com/user-attachments/assets/9f644655-d82c-46b5-85fd-d54e97f03e89" />
-<img width="124" height="268" alt="Image" src="https://github.com/user-attachments/assets/fcef4ae3-23c0-4296-af9e-27cf6fd51db5" />
+<img width="123" height="246" alt="Image" src="https://github.com/user-attachments/assets/98b61850-adee-4ac9-b7be-f57e286b65c7" />
 
 ### Links
 
