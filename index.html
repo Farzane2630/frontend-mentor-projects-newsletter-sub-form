@@ -18,7 +18,7 @@
   </head>
   <body>
     <main class="wrapper">
-        <section class="illustration-section">
+      <section class="illustration-section">
         <picture>
           <source
             media="(min-width: 992px)"
@@ -73,9 +73,14 @@
           </div>
         </div>
 
-        <form action="./success.html" class="sign-up">
-          <label for="email">Email address</label>
+        <form novalidate method="post" class="sign-up">
+          <label for="email"
+            >Email address
+            <span class="email-error-message" aria-live="polite"></span
+          ></label>
           <input
+            required
+            minlength="8"
             type="email"
             name="email"
             id="email"

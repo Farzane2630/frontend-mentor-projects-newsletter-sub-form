@@ -41,7 +41,13 @@ body {
     gap: 1em; }
     .content-section form label {
       font-weight: 700;
-      font-size: 0.75em; }
+      font-size: 0.75em;
+      display: flex;
+      justify-content: space-between; }
+    .content-section form .email-error-message {
+      color: #ff6257;
+      font-weight: 500;
+      font-size: 1em; }
     .content-section form input {
       padding: 1em 1.5em;
       border: 0.1em solid #949494;
@@ -61,6 +67,9 @@ body {
   .dismiss-btn:hover {
     background: linear-gradient(90deg, #ff6257 50%, rgba(255, 166, 0, 0.521) 100%); }
 
+.submit-btn[aria-disabled="true"] {
+  background: #949494; }
+
 .success-wrapper {
   height: 100vh;
   background-color: white;
@@ -72,6 +81,9 @@ body {
   .success-wrapper .content {
     display: grid;
     gap: 2em; }
+  .success-wrapper .dismiss-btn a {
+    text-decoration: none;
+    color: white; }
 
 @media (min-width: 768px) {
   body {

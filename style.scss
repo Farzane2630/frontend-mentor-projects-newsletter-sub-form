@@ -68,6 +68,14 @@ body {
         label {
             font-weight: 700;
             font-size: 0.75em;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .email-error-message {
+            color: $Primary--Red;
+            font-weight: 500;
+            font-size: 1em;
         }
 
         input {
@@ -99,6 +107,9 @@ body {
     }
 }
 
+.submit-btn[aria-disabled="true"]{
+background: $Grey;
+}
 
 // Success Message 
 .success-wrapper {
@@ -113,6 +124,10 @@ body {
     .content {
         display: grid;
         gap: 2em
+    }
+    .dismiss-btn a {
+        text-decoration: none;
+        color: $White
     }
 }
 
