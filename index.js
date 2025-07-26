@@ -4,7 +4,7 @@ const submitBtn = document.querySelector(".submit-btn");
 const errorMsg = document.querySelector(".email-error-message");
 
 const isLocal = location.hostname === "localhost";
-// const siteUrl = isLocal ? "http://localhost:8082": "https://frontend-mentor-projects-newsletter.vercel.app/"
+const siteUrl = isLocal ? "http://localhost:8082": "https://frontend-mentor-projects-newsletter.vercel.app/"
 
 // this function shows that email input has a valid type or not
 const isEmailValid = () => {
@@ -46,10 +46,10 @@ form.addEventListener("submit", (e) => {
     setTimeout(() => {
       submitBtn.innerHTML = "Subscribe to monthly newsletter";
       alert("Sign up successfully!");
-      window.location.href = isLocal
-        ? "http://localhost:8082/success.html"
-        : "https://frontend-mentor-projects-newsletter.vercel.app/success.html";
-      // form.action = `${siteUrl}/success.html`;
+      // window.location.href = isLocal
+      //   ? "http://localhost:8082/success.html"
+      //   : "https://frontend-mentor-projects-newsletter.vercel.app/success.html";
+      form.action = `${siteUrl}/success.html`;
       form.submit();
       form.reset();
     }, 2000);
