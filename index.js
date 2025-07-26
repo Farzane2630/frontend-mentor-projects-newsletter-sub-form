@@ -2,10 +2,10 @@ const form = document.querySelector("form");
 const emailInput = document.querySelector("#email");
 const submitBtn = document.querySelector(".submit-btn");
 const errorMsg = document.querySelector(".email-error-message");
-const siteUrl = "http://localhost:8082" || "https://frontend-mentor-projects-newsletter.vercel.app/"
 
+const isLocal = location.hostname === "localhost";
+const siteUrl = isLocal ? "http://localhost:8082": "https://frontend-mentor-projects-newsletter.vercel.app/"
 
-console.log(siteUrl);
 
 // this function shows that email input has a valid type or not
 const isEmailValid = () => {
